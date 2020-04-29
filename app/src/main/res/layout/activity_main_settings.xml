@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <EditText
+        android:id="@+id/passiveLoss1550Input"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:gravity="center_horizontal"
+        android:inputType="number|numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/spliceLoss1550Input"
+        app:layout_constraintTop_toBottomOf="@+id/spliceLoss1550Input" />
+
+    <EditText
+        android:id="@+id/connectorLoss1550Input"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:gravity="center_horizontal"
+        android:inputType="number|numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/passiveLoss1550Input"
+        app:layout_constraintTop_toBottomOf="@+id/passiveLoss1550Input" />
+
+    <EditText
+        android:id="@+id/distanceLoss1310Input"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:gravity="center_horizontal"
+        android:inputType="number|numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/connectorLoss1310Input"
+        app:layout_constraintTop_toBottomOf="@+id/connectorLoss1310Input" />
+
+    <EditText
+        android:id="@+id/distanceLoss1550Input"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:gravity="center_horizontal"
+        android:inputType="number|numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/connectorLoss1550Input"
+        app:layout_constraintTop_toBottomOf="@+id/connectorLoss1550Input" />
+
+    <EditText
+        android:id="@+id/spliceLoss1550Input"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:ems="8"
+        android:gravity="center_horizontal"
+        android:inputType="number|numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/spliceLoss1550Label"
+        app:layout_constraintTop_toTopOf="@+id/topFrame4" />
+
+    <EditText
+        android:id="@+id/connectorLoss1310Input"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:gravity="center_horizontal"
+        android:inputType="number|numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/passiveLoss1310Input"
+        app:layout_constraintTop_toBottomOf="@+id/passiveLoss1310Input" />
+
+    <EditText
+        android:id="@+id/passiveLoss1310Input"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:gravity="center_horizontal"
+        android:inputType="number|numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/spliceLoss1310Input"
+        app:layout_constraintTop_toBottomOf="@+id/spliceLoss1310Input" />
+
+    <View
+        android:id="@+id/topFrame4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#4E03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topFrame2" />
+
+    <View
+        android:id="@+id/topFrame2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#4E03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ValuesLabel1310"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="1310 Values"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/topFrame2"
+        app:layout_constraintTop_toTopOf="@+id/topFrame2" />
+
+    <TextView
+        android:id="@+id/values1550Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="1550 Values"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/topFrame4"
+        app:layout_constraintTop_toTopOf="@+id/topFrame4" />
+
+    <TextView
+        android:id="@+id/spliceLoss1310Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Splice Loss"
+        app:layout_constraintBottom_toTopOf="@+id/passiveLoss1310Input"
+        app:layout_constraintStart_toStartOf="@+id/topFrame2" />
+
+    <TextView
+        android:id="@+id/spliceLoss1550Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Splice Loss"
+        app:layout_constraintBottom_toTopOf="@+id/passiveLoss1550Input"
+        app:layout_constraintStart_toStartOf="@+id/topFrame4" />
+
+    <TextView
+        android:id="@+id/passiveLoss1310Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Passive Loss"
+        app:layout_constraintBottom_toTopOf="@+id/connectorLoss1310Input"
+        app:layout_constraintStart_toStartOf="@+id/spliceLoss1310Label" />
+
+    <TextView
+        android:id="@+id/passiveLoss1550Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Passive Loss"
+        app:layout_constraintBottom_toBottomOf="@+id/passiveLoss1550Input"
+        app:layout_constraintStart_toStartOf="@+id/spliceLoss1550Label" />
+
+    <TextView
+        android:id="@+id/connectorLoss1310Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Connector Loss"
+        app:layout_constraintBottom_toTopOf="@+id/distanceLoss1310Input"
+        app:layout_constraintStart_toStartOf="@+id/passiveLoss1310Label" />
+
+    <TextView
+        android:id="@+id/connectorLoss1550Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Connector Loss"
+        app:layout_constraintBottom_toBottomOf="@+id/connectorLoss1550Input"
+        app:layout_constraintStart_toStartOf="@+id/passiveLoss1550Label" />
+
+    <TextView
+        android:id="@+id/distAtten1310Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Distance Attenuation Loss"
+        app:layout_constraintBottom_toBottomOf="@+id/distanceLoss1310Input"
+        app:layout_constraintStart_toStartOf="@+id/connectorLoss1310Label" />
+
+    <TextView
+        android:id="@+id/distAtten1550Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Distance Attenuation Loss"
+        app:layout_constraintBottom_toBottomOf="@+id/distanceLoss1550Input"
+        app:layout_constraintStart_toStartOf="@+id/connectorLoss1550Label" />
+
+    <EditText
+        android:id="@+id/spliceLoss1310Input"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:ems="8"
+        android:gravity="center_horizontal"
+        android:inputType="number|numberDecimal"
+        android:text="0"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/spliceLoss1310Label"
+        app:layout_constraintTop_toTopOf="@+id/topFrame2" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Commit Changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/restoreButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Restore Defaults"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="184dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Speed of Light, LLC Attenuation Calculator V1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topFrame4" />
+
+    <TextView
+        android:id="@+id/websiteLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="1dp"
+        android:clickable="true"
+
+        android:linksClickable="true"
+        android:text="www.SpeedofLightLLC.com"
+        android:textColor="#2196F3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/readmeLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="auto"
+        android:text="View Readme.txt"
+        android:textColor="#2196F3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topFrame4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

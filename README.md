@@ -1,87 +1,54 @@
 # AttenCalc
 
-One Paragraph of project description goes here
+Atten Calc is a simple attenuation calculator for computing fiber link attenuation and light budgets on fiber circuits based on user input. It makes these calculations for both 1310nm and 1550nm waves. It is both simple and customizable to meet the needs of the user as they use different equipment and tools that may create different losses than the default settings. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+All you will need is an Android device running Lollipop (Android 5.0) or higher.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+The application can be installed by downloading it directly from the Google Play Store or by installing the .apk file. If using the .apk file you may need to enable app installation from unknown sources. The Android OS should take care of the rest.
 
-Say what the step will be
+## Using the Software
 
-```
-Give the example
-```
-
-And repeat
+Once installed, Atten Calc can be accessed through the app drawer. On the initial run, all loss parameters are set to default as follows.
 
 ```
-until finished
+Under 1310: 
+Passive Loss = 2.9db
+Connector Loss = .75db
+Splice Loss = .1db
+Link Loss(per km) = .35db
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```
-Give an example
+Under 1550: 
+Passive Loss = 2.7db
+Connector Loss = .75db
+Splice Loss = .1db
+Link Loss(per km) = .22db
 ```
+### Performing Calculations
 
-### And coding style tests
+Starting Light level and Link Distance are both manually entered by the user. Splice, Passive, and Connector count can be adjusted by using each up and down error respectively. The totals for each will be shown between each set of up and down arrows.
 
-Explain what these tests test and why
+Pressing the Calculate button displays the calculations based on the user input. The Clear button will clear all calculations and input ready for the next task.
 
-```
-Give an example
-```
+### Changing Default Values
 
-## Deployment
+Pressing the Options button takes the user to an options screen that displays all the current loss parameters. Here the user can customize each parameter to their need. by editting it in the test box and pressing the Commit Changes button. This will commit the changes and return the user to the main screen.
 
-Add additional notes about how to deploy this on a live system
+Pressing the Restore Defaults button will place the default values back into the text boxes where the user can commit then using the Commit Changes button.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* Android Studio 3.6.3
+* GIMP 2.8 GNU Image Manipulation Program
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* **Josh Shoaf** - *sole contributor*

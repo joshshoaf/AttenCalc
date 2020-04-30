@@ -4,8 +4,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Attenuation Calculator"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="Atten Calc"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -14,7 +14,7 @@
             android:label="@string/title_activity_readme_view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".MainSettingsActivity"
+            android:name=".SettingsActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -27,7 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity" />
     </application>
 
 </manifest>
